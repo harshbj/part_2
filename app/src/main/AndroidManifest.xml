@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.part_2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".part_2"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Faculty" android:parentActivityName=".part_2" />
+        <activity android:name=".Timetable" android:parentActivityName=".part_2"/>
+        <activity android:name=".Contactus" android:parentActivityName=".part_2" />
+        <activity android:name=".Notice" android:parentActivityName=".part_2"/>
+        <activity android:name=".Location" android:parentActivityName=".part_2"/>
+        <activity android:name=".Calender" android:parentActivityName=".part_2" />
+        <activity android:name=".Imp" android:parentActivityName=".part_2" />
+        <activity
+            android:name=".Deptlist"
+            android:label="@string/title_activity_deptlist"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgradient"
+    tools:context=".Faculty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/faccard1"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:stateListAnimator="@anim/animation"
+            android:clickable="true"
+            android:elevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/comp"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/comp"/>
+                <TextView
+                    android:id="@+id/textcomp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/comp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:layout_alignParentRight="true"
+                    android:text="COMPUTER"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/comp"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textcomp"
+                    android:layout_alignParentRight="true"
+                    android:text="ENGINEERING"/>
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/faccard2"
+            android:layout_below="@+id/faccard1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:stateListAnimator="@anim/animation"
+            android:clickable="true"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/itimg"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/itdept" />
+
+                <TextView
+                    android:id="@+id/ittext"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/itimg"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:text="INFORMATION"
+
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/ittext1"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/ittext"
+                    android:layout_toLeftOf="@+id/itimg"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:text="TECHNOLOGY"
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/faccard3"
+            android:layout_below="@+id/faccard2"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:stateListAnimator="@anim/animation"
+            android:clickable="true"
+            android:elevation="8dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mech"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/mechdept"/>
+                <TextView
+                    android:id="@+id/textmech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/mech"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:layout_alignParentRight="true"
+                    android:text="MECHANICAL"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/mech"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textmech"
+                    android:layout_alignParentRight="true"
+                    android:text="ENGINEERING"/>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/faccard4"
+            android:layout_below="@+id/faccard3"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:stateListAnimator="@anim/animation"
+            android:clickable="true"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civilimg"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/civil" />
+
+                <TextView
+                    android:id="@+id/civiltext"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/civilimg"
+                    android:layout_marginRight="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:text="CIVIL"
+
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/civiltext1"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/civiltext"
+                    android:layout_toLeftOf="@+id/civilimg"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:text="ENGINEERING"
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/faccard5"
+            android:layout_below="@+id/faccard4"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:stateListAnimator="@anim/animation"
+            android:clickable="true"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/extc"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/elecdept"/>
+                <TextView
+                    android:id="@+id/textextc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/extc"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:layout_alignParentRight="true"
+                    android:text="ELECTRONICS &amp;"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/extc"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/textextc"
+                    android:layout_alignParentRight="true"
+                    android:text="TELE COMM."/>
+
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/faccard6"
+            android:layout_below="@+id/faccard5"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:stateListAnimator="@anim/animation"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/instruimg"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/instrudept" />
+
+                <TextView
+                    android:id="@+id/instrutext"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@+id/instruimg"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:text="INSTRUMENTATION"
+
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/instrutext1"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/instrutext"
+                    android:layout_toLeftOf="@+id/instruimg"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:text="ENGINEERING"
+                    android:textSize="19dp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

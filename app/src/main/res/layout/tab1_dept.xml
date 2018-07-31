@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundid_it"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/itsem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM 3"
+            android:textColor="@color/iron"
+            android:padding="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/itsem4"
+        android:layout_below="@+id/itsem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM 4"
+            android:textColor="@color/iron"
+            android:padding="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/itsem5"
+        android:layout_below="@+id/itsem4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM 5"
+            android:textColor="@color/iron"
+            android:padding="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/itsem6"
+        android:layout_below="@+id/itsem5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM 6"
+            android:textColor="@color/iron"
+            android:padding="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/itsem7"
+        android:layout_below="@+id/itsem6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM 7"
+            android:textColor="@color/iron"
+            android:padding="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/itsem8"
+        android:layout_below="@+id/itsem7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM 8"
+            android:textColor="@color/iron"
+            android:padding="15dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photo_it"
+            android:layout_marginBottom="30dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

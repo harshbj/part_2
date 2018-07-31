@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgradient"
+    tools:context=".Timetable">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+  //// 1st
+    <android.support.v7.widget.CardView
+        android:id="@+id/faccard1"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        android:clickable="true"
+        android:elevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/comp"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/comp"/>
+            <TextView
+                android:id="@+id/textcomp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:paddingTop="40dp"
+                android:layout_toRightOf="@+id/comp"
+               android:gravity="center_horizontal"
+                 android:layout_alignParentRight="true"
+                android:text="FIRST YEAR"/>
+
+           <ImageView
+               android:id="@+id/linefy"
+               android:layout_below="@+id/comp"
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:src="@color/black"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnfy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEM-2"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linefy"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnsem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEM-1"
+                android:backgroundTint="@color/colorAccent"
+
+                android:layout_toLeftOf="@+id/btnfy"
+                android:layout_below="@+id/linefy"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+      //////2nd
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/faccard2"
+        android:layout_below="@+id/faccard1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        android:clickable="true"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/itimg"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/itdept" />
+
+            <TextView
+                android:id="@+id/ittext"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@+id/itimg"
+                android:layout_marginRight="50dp"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="40dp"
+                android:layout_height="wrap_content"
+                android:text="SECOND YEAR"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+
+
+        <ImageView
+            android:id="@+id/linesy"
+            android:layout_below="@+id/itimg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@color/black"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sem4"
+           android:layout_toRightOf="@+id/sem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM-4"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/linesy"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEM-3"
+            android:id="@+id/sem3"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linesy"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+////3 rd
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/faccard3"
+        android:layout_below="@+id/faccard2"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        android:clickable="true"
+        android:elevation="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ty"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/comp"/>
+            <TextView
+                android:id="@+id/textty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:paddingTop="40dp"
+                android:layout_toRightOf="@+id/ty"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:text="THIRD YEAR"/>
+
+            <ImageView
+                android:id="@+id/linety"
+                android:layout_below="@+id/ty"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@color/black"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/sem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEM-6"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linety"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/sem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEM-5"
+                android:backgroundTint="@color/colorAccent"
+
+                android:layout_toLeftOf="@+id/sem6"
+                android:layout_below="@+id/linety"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+ ///4th
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/faccard4"
+        android:layout_below="@+id/faccard3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@anim/animation"
+        android:clickable="true"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civilimg"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/civil" />
+
+            <TextView
+                android:id="@+id/civiltext"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@+id/civilimg"
+                android:layout_marginRight="50dp"
+                android:paddingTop="40dp"
+                android:layout_height="wrap_content"
+                android:text="FORTH YEAR"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/linefthy"
+                android:layout_below="@+id/civilimg"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@color/black"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/sem8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEM-8"
+                android:layout_toRightOf="@+id/sem7"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/linefthy"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEM-7"
+                android:backgroundTint="@color/colorAccent"
+                android:id="@+id/sem7"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linefthy"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
